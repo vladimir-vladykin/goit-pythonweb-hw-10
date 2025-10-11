@@ -1,5 +1,5 @@
-# goit-pythonweb-hw-08
-Python Web homework 08, FastAPI + REST
+# goit-pythonweb-hw-10
+Python Web homework 10, Auth
 
 To setup DB run:
 ```
