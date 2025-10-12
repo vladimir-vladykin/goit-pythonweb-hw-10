@@ -1,8 +1,10 @@
 from fastapi import FastAPI
-from src.api import contacts
+from src.api import contacts, auth, users
 
 app = FastAPI()
 app.include_router(contacts.router, prefix="/api")
+app.include_router(auth.router, prefix="/api")
+app.include_router(users.router, prefix="/api")
 
 
 def run():
