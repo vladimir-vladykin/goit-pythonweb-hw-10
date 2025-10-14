@@ -1,5 +1,5 @@
 from datetime import datetime, date
-from pydantic import BaseModel, Field, ConfigDict
+from pydantic import BaseModel, Field, ConfigDict, EmailStr
 
 
 class ContactModel(BaseModel):
@@ -36,3 +36,7 @@ class UserCreate(BaseModel):
 class Token(BaseModel):
     access_token: str
     token_type: str
+
+
+class RequestEmail(BaseModel):
+    email: EmailStr
